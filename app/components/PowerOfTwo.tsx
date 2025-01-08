@@ -1,22 +1,27 @@
+
 import { useState } from "react"
 
-export default function PrimeNumber() {
+export default function PowerOfTwo() {
   const [input, setInput] = useState<number>(0)
   const [output, setOutput] = useState<string>("")
 
-  function isPrime(n: number) {
-    if (n < 2) return false;
+  function isPowerOfTwo(n: number) {
 
-    for (let i = 2; i < n; i++) {
-      if (n % i === 0) return false
+    if (n < 1) return false;
+
+    while (n > 1) {
+      if (n % 2 !== 0) {
+        return false;
+      }
+      n = n / 2
     }
 
-    return true
+    return true;
 
   }
 
   function run() {
-    setOutput(isPrime(input) ? "true" : "false")
+    setOutput(isPowerOfTwo(input) ? "true" : "false")
   }
 
   return <div className="flex flex-col gap-2">

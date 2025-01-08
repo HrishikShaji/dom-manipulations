@@ -1,5 +1,6 @@
 import Factorial from "../components/Factorial";
 import Fibonacci from "../components/Fibonacci";
+import PowerOfTwo from "../components/PowerOfTwo";
 import PrimeNumber from "../components/PrimeNumber";
 
 export const items: { [key: string]: { title: string; component: React.ComponentType } } = {
@@ -11,8 +12,12 @@ export const items: { [key: string]: { title: string; component: React.Component
 		title: "Factorial",
 		component: Factorial,
 	},
-	prime_number: {
+	primeNumber: {
 		title: "Prime Number",
 		component: PrimeNumber,
 	},
+	powerOfTwo: {
+		title: "Power of Two",
+		component: PowerOfTwo
+	}
 };
