@@ -1,6 +1,8 @@
 import BinarySearch from "../components/BinarySearch";
+import BubbleSort from "../components/BubbleSort";
 import Factorial from "../components/Factorial";
 import Fibonacci from "../components/Fibonacci";
+import InsertionSort from "../components/InsertionSort";
 import LinearSearch from "../components/LinearSearch";
 import PowerOfTwo from "../components/PowerOfTwo";
 import PrimeNumber from "../components/PrimeNumber";
@@ -29,5 +31,13 @@ export const items: { [key: string]: { title: string; component: React.Component
 	binarySearch: {
 		title: "Binary Search",
 		component: BinarySearch
+	},
+	bubbleSort: {
+		title: "Bubble Sort",
+		component: BubbleSort
+	},
+	insertionSort: {
+		title: "Insertion Sort",
+		component: InsertionSort
 	}
 };
