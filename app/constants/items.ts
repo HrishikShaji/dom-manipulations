@@ -4,8 +4,10 @@ import Factorial from "../components/Factorial";
 import Fibonacci from "../components/Fibonacci";
 import InsertionSort from "../components/InsertionSort";
 import LinearSearch from "../components/LinearSearch";
+import MergeSort from "../components/MergeSort";
 import PowerOfTwo from "../components/PowerOfTwo";
 import PrimeNumber from "../components/PrimeNumber";
+import QuickSort from "../components/QuickSort";
 
 export const items: { [key: string]: { title: string; component: React.ComponentType } } = {
 	fibonacci: {
@@ -39,5 +41,13 @@ export const items: { [key: string]: { title: string; component: React.Component
 	insertionSort: {
 		title: "Insertion Sort",
 		component: InsertionSort
+	},
+	quickSort: {
+		title: "Quick Sort",
+		component: QuickSort
+	},
+	mergeSort: {
+		title: "Merge Sort",
+		component: MergeSort
 	}
 };
