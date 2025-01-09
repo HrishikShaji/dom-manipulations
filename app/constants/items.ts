@@ -1,5 +1,6 @@
 import BinarySearch from "../components/BinarySearch";
 import BubbleSort from "../components/BubbleSort";
+import CartesianProduct from "../components/CartesianProduct";
 import Factorial from "../components/Factorial";
 import Fibonacci from "../components/Fibonacci";
 import InsertionSort from "../components/InsertionSort";
@@ -49,5 +50,9 @@ export const items: { [key: string]: { title: string; component: React.Component
 	mergeSort: {
 		title: "Merge Sort",
 		component: MergeSort
+	},
+	cartesianProduct: {
+		title: "Cartesian Product",
+		component: CartesianProduct
 	}
 };
